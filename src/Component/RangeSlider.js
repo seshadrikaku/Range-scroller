@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Form from 'react-jsonschema-form';
+import "./Range.css"
 
 const RangeSliderForm = () => {
     const [formData, setFormData] = useState({ minValue: "", maxValue: "" });
@@ -34,7 +35,7 @@ const RangeSliderForm = () => {
 
 
     return (
-        <div>
+        <div className='Rangeslider'>
             <h1 >Range Slider Form</h1>
             <div>
                 <input type="number" value={formData.minValue} onChange={(e) => handleInputChange(e, 'minValue')} />
